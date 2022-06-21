@@ -2,7 +2,7 @@
   "type": "CityJSONExtension",
   "name": "Spatial Planning",
   "description": "Extension to model the spatial planning",
-  "uri": "https://web.itu.edu.tr/cityjson/cityjson-spatialplanning.ext.json",
+  "uri": "https://github.com/geospatialstudies/cityjsontest/raw/main/cityjson-spatialplanning.ext.json",
   "version": "0.1",
   "versionCityJSON": "1.1.1",
   "extraRootProperties": {},     
