@@ -6,7 +6,17 @@
   "version": "0.1",
   "versionCityJSON": "1.1",
   "extraRootProperties": {},     
-  "extraAttributes": {},
+  "extraAttributes": {
+	  "Building": {
+      "+permitDate": { "type": "string" },
+	  "BuildingPart": {
+      "+numberOfRoom": { "type": "integer" },
+      
+    },
+	  
+	  
+	  
+  },
   "extraCityObjects": {
 	  "+PlanUnit": {
       "allOf": [
