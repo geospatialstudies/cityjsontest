@@ -1,10 +1,10 @@
 {
   "type": "CityJSONExtension",
-  "name": "Spatial Planning",
+  "name": "SpatialPlanning",
   "description": "Extension to model the spatial planning",
   "uri": "https://raw.githubusercontent.com/geospatialstudies/cityjsontest/main/cityjson-spatialplanning.ext.json",
   "version": "0.1",
-  "versionCityJSON": "1.1",
+  "versionCityJSON": "1.1.1",
   "extraRootProperties": {},     
   "extraAttributes": {},
   "extraCityObjects": {
