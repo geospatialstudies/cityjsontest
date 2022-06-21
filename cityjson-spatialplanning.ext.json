@@ -1,0 +1,63 @@
+{
+  "type": "CityJSONExtension",
+  "name": "Spatial Planning",
+  "description": "Extension to model the spatial planning",
+  "uri": "https://web.itu.edu.tr/cityjson/cityjson-spatialplanning.ext.json",
+  "version": "0.1",
+  "versionCityJSON": "1.1.1",
+  "extraRootProperties": {},     
+  "extraAttributes": {},
+  "extraCityObjects": {
+	  "+PlanUnit": {
+      "allOf": [
+        {
+          "$ref": "cityobjects.schema.json#/_AbstractCityObject"
+        },
+        {
+          "properties": {
+            "address": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "$ref": "geomprimitives.schema.json#/MultiPoint"
+                  }
+                }
+              }
+            },
+            "geometry": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "$ref": "geomprimitives.schema.json#/MultiSurface"
+                  },
+                  {
+                    "$ref": "geomprimitives.schema.json#/Solid"
+                  },
+                  {
+                    "$ref": "geomprimitives.schema.json#/CompositeSolid"
+                  },
+                  {
+                    "$ref": "geomprimitives.schema.json#/MultiPoint"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+  },
+  
+}
