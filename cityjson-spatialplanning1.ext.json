@@ -1,0 +1,52 @@
+{
+  "type": "CityJSONExtension",
+  "name": "SpatialPlanning",
+  "description": "Extension to model the spatial planning",
+  "uri": "https://raw.githubusercontent.com/geospatialstudies/cityjsontest/main/cityjson-spatialplanning.ext.json",
+  "version": "0.1",
+  "versionCityJSON": "1.1",
+  "extraRootProperties": {},     
+  "extraAttributes": {},
+  "extraCityObjects": {
+  
+	"+PlanUnit": {
+      "allOf": [
+        { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
+        {
+          "properties": {
+            "type": { "enum": [ "+PlanUnit" ] },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "zoningName": { "type": "string" },
+                
+              }
+            },
+            
+            "geometry": {
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
+                ]
+              }
+            }
+          },
+          "required": [ "type", "parents", "geometry" ]
+        }
+      ]
+    },
+  
+  
+  
+  
+  }
+	  
+	  
+	  
+  }
+  
+	  
+	  	  
+	  
+ 
