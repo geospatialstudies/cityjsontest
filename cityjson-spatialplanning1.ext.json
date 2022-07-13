@@ -94,6 +94,10 @@
                 
               }
             },
+			"parents": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
             
             "geometry": {
               "type": "array",
