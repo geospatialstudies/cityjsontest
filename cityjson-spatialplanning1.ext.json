@@ -9,19 +9,20 @@
   "extraAttributes": {},
   "extraCityObjects": {
   
-
 	
-	"+PlanUnit": {
+	"+NoiseCityFurnitureSegment": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
-            "type": { "enum": [ "+PlanUnit" ] },
+            "type": { "enum": [ "+NoiseCityFurnitureSegment" ] },
             "attributes": {
               "type": "object",
               "properties": {
-                "area": { "type": "number" },
-                
+                "reflection": { "type": "string" },
+                "reflectionCorrection": { "$ref": "#/definitions/measure" },
+                "height": { "$ref": "#/definitions/measure" },
+                "distance": { "$ref": "#/definitions/measure" }
               }
             },
             "parents": {
@@ -32,18 +33,7 @@
               "type": "array",
               "items": {
                 "oneOf": [
-                  {
-                    "$ref": "geomprimitives.schema.json#/MultiSurface"
-                  },
-                  {
-                    "$ref": "geomprimitives.schema.json#/Solid"
-                  },
-                  {
-                    "$ref": "geomprimitives.schema.json#/CompositeSolid"
-                  },
-                  {
-                    "$ref": "geomprimitives.schema.json#/MultiPoint"
-                  }
+                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
                 ]
               }
             }
@@ -51,7 +41,7 @@
           "required": [ "type", "parents", "geometry" ]
         }
       ]
-    }
+    },
     
   
   }	  
