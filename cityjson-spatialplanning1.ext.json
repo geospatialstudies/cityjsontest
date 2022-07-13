@@ -10,12 +10,12 @@
   "extraCityObjects": {
   
 	
-	"+NoiseCityFurnitureSegment": {
+	"+Building": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
-            "type": { "enum": [ "+NoiseCityFurnitureSegment" ] },
+            "type": { "enum": [ "+Building" ] },
             "attributes": {
               "type": "object",
               "properties": {
