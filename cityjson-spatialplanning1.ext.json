@@ -9,7 +9,7 @@
   "extraAttributes": {},
   "extraCityObjects": {
   
-	"+X": {
+	"+NoiseCityFurnitureSegment": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
