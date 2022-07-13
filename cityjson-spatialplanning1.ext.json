@@ -17,7 +17,7 @@
           "properties": {
             "type": { "enum": [ "+PlanUnit" ] },
             "attributes": {
-              "type": "object",
+              
               "properties": {
                 "area": { "type": "number" },
                 
