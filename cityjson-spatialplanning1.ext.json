@@ -10,12 +10,12 @@
   "extraCityObjects": {
   
 	
-	"PlanUnit": {
+	"+PlanUnit": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
-            "type": { "enum": [ "PlanUnit" ] },
+            "type": { "enum": [ "+PlanUnit" ] },
             "attributes": {
               "type": "object",
               "properties": {
