@@ -61,7 +61,7 @@
               }
             }
           },
-          "required": [ "type", "geometry" ]
+          "required": [ "type" ]
         }
       ]
     },
