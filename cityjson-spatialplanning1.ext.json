@@ -19,10 +19,8 @@
             "attributes": {
               "type": "object",
               "properties": {
-                "reflection": { "type": "string" },
-                "reflectionCorrection": { "$ref": "#/definitions/measure" },
-                "height": { "$ref": "#/definitions/measure" },
-                "distance": { "$ref": "#/definitions/measure" }
+                "area": { "type": "number" },
+                
               }
             },
             "parents": {
@@ -64,7 +62,7 @@
           "required": [ "type" ]
         }
       ]
-    },
+    }
     
   
   }	  
