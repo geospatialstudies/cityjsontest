@@ -9,7 +9,7 @@
   "extraAttributes": {},
   "extraCityObjects": {
   
-	"+PlanUnit": {
+	"+X": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
