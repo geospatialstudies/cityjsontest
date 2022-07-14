@@ -80,7 +80,7 @@
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
-            "type": { "enum": [ "+Plan" ] },
+            "type": { "enum": [ "+NoiseCityFurnitureSegment" ] },
             "attributes": {
               "type": "object",
               "properties": {
