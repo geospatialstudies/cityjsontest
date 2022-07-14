@@ -75,12 +75,12 @@
   },
   
   "extraCityObjects": {
-    "+Plan": {
+    "+PlanUnit": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
-            "type": { "enum": [ "+Plan" ] },
+            "type": { "enum": [ "+PlanUnit" ] },
             "attributes": {
               "type": "object",
               "properties": {
@@ -98,7 +98,10 @@
               "type": "array",
               "items": {
                 "oneOf": [
-                  { "$ref": "geomprimitives.schema.json#/MultiLineString" }
+                  { "$ref": "geomprimitives.schema.json#/MultiLineString" },
+                {
+                  "$ref": "geomprimitives.schema.json#/Solid"
+                },
                 ]
               }
             }
