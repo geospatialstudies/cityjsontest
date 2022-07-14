@@ -75,12 +75,12 @@
   },
   
   "extraCityObjects": {
-    "+NoiseCityFurnitureSegment": {
+    "+Plan": {
       "allOf": [
         { "$ref": "cityobjects.schema.json#/_AbstractCityObject" },
         {
           "properties": {
-            "type": { "enum": [ "+NoiseCityFurnitureSegment" ] },
+            "type": { "enum": [ "+Plan" ] },
             "attributes": {
               "type": "object",
               "properties": {
