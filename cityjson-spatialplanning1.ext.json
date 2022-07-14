@@ -101,7 +101,7 @@
                   { "$ref": "geomprimitives.schema.json#/MultiLineString" },
                 {
                   "$ref": "geomprimitives.schema.json#/Solid"
-                },
+                }
                 ]
               }
             }
